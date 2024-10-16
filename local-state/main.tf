@@ -1,3 +1,4 @@
+# No backend configuration and state files are stored locally after terraform apply 
 terraform {
   required_providers {
     aws = {
@@ -8,7 +9,7 @@ terraform {
   required_version = ">= 1.2.0"
 }
 provider "aws" {
-    region = "ap-south-1" 
+    region = "ap-south-1"   
 }
 resource "aws_instance" "app_server" {
     ami    = "ami-0dee22c13ea7a9a67"
